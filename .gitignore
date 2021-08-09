@@ -21,3 +21,6 @@ node_modules/
 package-lock.json
 
 .idea
+
+report/*.htlm
+report/*.json

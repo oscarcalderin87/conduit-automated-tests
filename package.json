@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Conduit Automated Tests",
   "scripts": {
-    "test": "./node_modules/@cucumber/cucumber/bin/cucumber-js -f @cucumber/pretty-formatter ./features/ --tags '@articles'"
+    "test": "./node_modules/@cucumber/cucumber/bin/cucumber-js -f json:./report/report.json -f @cucumber/pretty-formatter ./features/ --tags '@articles'"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,10 @@
     "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
     "axios": "^0.21.1",
     "chai": "^4.3.4",
+    "chromedriver": "^92.0.1",
     "cucumber": "^7.0.0-rc.0",
+    "cucumber-html-reporter": "^5.4.0",
+    "gulp": "^4.0.2",
     "random-username-generator": "^1.0.4",
     "selenium-webdriver": "^4.0.0-beta.4"
   }
