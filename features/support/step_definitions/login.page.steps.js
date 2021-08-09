@@ -1,8 +1,8 @@
 const {When, Then} = require("cucumber")
-const LoginPage = require("../../../pages/login.page");
-const {expect} = require("chai");
-const FeedPage = require("../../../pages/feed.page");
-const {baseURL} = require("../../../config");
+const LoginPage = require("../../../pages/login.page")
+const {expect} = require("chai")
+const FeedPage = require("../../../pages/feed.page")
+const {baseURL} = require("../../../config")
 
 When(/^I go to the login page$/, async function () {
     await this.driver.get(`${baseURL}/login`)

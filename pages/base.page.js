@@ -14,6 +14,14 @@ class BasePage {
             })
         }, timeout, 'The element should disappear')
     }
+
+    async waitForElement(selector, timeout = 5000) {
+        await this.driver.wait(until.elementLocated(selector), timeout)
+    }
+
+    async waitForElements(selector, timeout = 5000) {
+        await this.driver.wait(until.elementsLocated(selector), timeout)
+    }
 }
 
 module.exports = BasePage
