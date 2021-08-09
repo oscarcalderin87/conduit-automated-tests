@@ -1,3 +1,5 @@
+const {until} = require("selenium-webdriver");
+
 class BasePage {
     constructor(_driver) {
         this.driver = _driver
