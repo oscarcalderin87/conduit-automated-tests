@@ -11,9 +11,6 @@
   },
   "author": "Oscar Calderin",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oscarcalderin87/conduit-automated-tests/issues"
-  },
   "homepage": "https://github.com/oscarcalderin87/conduit-automated-tests#readme",
   "dependencies": {
     "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
