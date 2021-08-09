@@ -16,6 +16,5 @@ When(/^I check that I am on the Login Page$/, async function () {
 
 Then(/^I log in into the application using the registered user$/, async function () {
     await this.page.login(this.user.email, this.user.password)
-    await this.page.waitForLoggedIn()
     this.page = new FeedPage(this.driver)
 })

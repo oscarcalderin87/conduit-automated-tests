@@ -20,10 +20,6 @@ class LoginPage extends BasePage {
     atLoginPage() {
         return this.atPage(this.pageSelector)
     }
-
-    async waitForLoggedIn() {
-        await this.waitForInvisibilityOfElement(this.loggedInSuccessfullyMsg)
-    }
 }
 
 module.exports = LoginPage

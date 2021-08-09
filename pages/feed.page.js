@@ -14,7 +14,7 @@ class FeedPage extends BasePage {
 
     async goToProfile(username) {
         await this.waitForElement(this.pageSelector(username))
-        await this.driver.findElement(this.pageSelector(username)).click()
+        this.clickWhenClickable(this.pageSelector(username))
     }
 }
 
