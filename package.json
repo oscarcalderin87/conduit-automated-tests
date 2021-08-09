@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Conduit Automated Tests",
   "scripts": {
-    "test": ""
+    "test": "./node_modules/@cucumber/cucumber/bin/cucumber-js -f @cucumber/pretty-formatter ./features/ --tags '@articles'"
   },
   "repository": {
     "type": "git",

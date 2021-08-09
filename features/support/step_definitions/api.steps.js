@@ -3,6 +3,7 @@ const {expect} = require("chai")
 const {generateUserName} = require("../utils/utils")
 const User = require("../../../models/User")
 const {getData, postData} = require("../utils/restHelper")
+const Article = require("../../../models/Article");
 
 Given(/^A new user$/, async function () {
     const username = generateUserName()
