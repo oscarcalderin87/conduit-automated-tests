@@ -1,0 +1,18 @@
+{
+  "name": "conduit-automated-tests",
+  "version": "1.0.0",
+  "description": "Conduit Automated Tests",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarcalderin87/conduit-automated-tests.git"
+  },
+  "author": "Oscar Calderin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarcalderin87/conduit-automated-tests/issues"
+  },
+  "homepage": "https://github.com/oscarcalderin87/conduit-automated-tests#readme"
+}
