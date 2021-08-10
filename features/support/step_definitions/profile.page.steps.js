@@ -1,4 +1,4 @@
-const {Then} = require("cucumber")
+const {Then} = require("@cucumber/cucumber")
 const {expect} = require("chai")
 
 Then(/^I check that the articles were created$/, async function () {

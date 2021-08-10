@@ -1,4 +1,4 @@
-const { setWorldConstructor, setDefaultTimeout } = require("cucumber")
+const { setWorldConstructor, setDefaultTimeout } = require("@cucumber/cucumber")
 const seleniumWebdriver = require('selenium-webdriver')
 const {browser, timeout} = require("../../config")
 

@@ -17,18 +17,12 @@ class BasePage {
         await this.driver.wait(until.elementsLocated(selector), timeout)
     }
 
-    clickWhenClickable(selector, timeout = 15000){
-        this.driver.wait(() => {
-            this.driver.findElement(selector).then(function(element){
-                return element.click().then(function(){
-                    return true
-                }, function(){
-                    return false
-                })
-            }, function(){
-                return false
+    async waitForInvisibilityOfElement(selector, timeout = 5000) {
+        await this.driver.wait( () => {
+            return this.driver.findElements(selector).then(function (found) {
+                return found.length === 0
             })
-        }, timeout, 'Timeout waiting for: ' + selector.value)
+        }, timeout, 'The element should disappear')
     }
 }
 

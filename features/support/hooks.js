@@ -1,9 +1,9 @@
-const {Before, After} = require('cucumber')
+const {Before, After} = require('@cucumber/cucumber')
 
-Before(function() {
-    return this.driver.manage().window().maximize()
+Before(async function() {
+    await this.driver.manage().window().maximize()
 })
 
-After(function() {
-    return this.driver.quit()
+After(async function() {
+    await this.driver.quit()
 })

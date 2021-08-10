@@ -1,4 +1,4 @@
-const {Given} = require("cucumber")
+const {Given} = require("@cucumber/cucumber")
 const {expect} = require("chai")
 const {generateUserName} = require("../utils/utils")
 const User = require("../../../models/User")

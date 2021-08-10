@@ -6,6 +6,7 @@ class FeedPage extends BasePage {
         super(driver)
         this.homeLink = By.linkText("Home")
         this.pageSelector = username => By.css(`[href='#/@${username}']`)
+        this.loggedInSuccessfullyMsg = By.xpath("//div[text()='Logged in successfully']")
     }
 
     atFeedPage() {
@@ -14,7 +15,8 @@ class FeedPage extends BasePage {
 
     async goToProfile(username) {
         await this.waitForElement(this.pageSelector(username))
-        this.clickWhenClickable(this.pageSelector(username))
+        await this.waitForInvisibilityOfElement(this.loggedInSuccessfullyMsg)
+        await this.driver.findElement(this.pageSelector(username)).click()
     }
 }
 

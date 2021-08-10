@@ -1,4 +1,4 @@
-const {When, Then} = require("cucumber")
+const {When, Then} = require("@cucumber/cucumber")
 const LoginPage = require("../../../pages/login.page")
 const {expect} = require("chai")
 const FeedPage = require("../../../pages/feed.page")

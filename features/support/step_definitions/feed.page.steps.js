@@ -1,4 +1,4 @@
-const {Then} = require("cucumber")
+const {Then} = require("@cucumber/cucumber")
 const {expect} = require("chai")
 const ProfilePage = require("../../../pages/profile.page")
 
