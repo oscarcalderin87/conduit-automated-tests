@@ -2,7 +2,7 @@ const {Given} = require("@cucumber/cucumber")
 const {expect} = require("chai")
 const {generateUserName} = require("../utils/utils")
 const User = require("../../../models/User")
-const {getData, postData} = require("../utils/restHelper")
+const {postData} = require("../utils/restHelper")
 const Article = require("../../../models/Article")
 
 Given(/^A new user$/, async function () {
@@ -21,7 +21,7 @@ Given(/^A new user$/, async function () {
         'accept': 'application/json'
     }
 
-    const response = await getData('/users', body, headers)
+    const response = await postData('/users', body, headers)
 
     expect(response.status).to.be.equal(201,
         `The status code should be 201, but it is ${response.status}`)
